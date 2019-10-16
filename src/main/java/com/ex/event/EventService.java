@@ -13,14 +13,18 @@ public class EventService {
 
 	}
 //
-//	public void mediumMethod(){
-//		System.out.println("---------------------");
+	public void mediumMethod(){
+		System.out.println("---------------------");
+        System.out.println("mediumMethod");
+        System.out.println("");
 
-//	}
-//
-//	public void longMethod(){
-//		System.out.println("---------------------");
+	}
 
-//	}
+	public void longMethod(){
+		System.out.println("---------------------");
+
+		System.out.println("longMethod");
+		System.out.println("");
+	}
 	
 }

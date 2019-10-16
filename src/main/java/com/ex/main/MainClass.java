@@ -16,13 +16,10 @@ public class MainClass {
 		eventService.shortMethod();
 		System.out.println();
 
-//		//print value: Hello World, type: param sent to method
-//		eventService.playConcert();
-//		System.out.println();
-//
-//		//print Method Execution Time: seconds
-//		eventService.runAmusementPark();
+		eventService.mediumMethod();
+		System.out.println();
 
+		eventService.longMethod();
 
 
 		
