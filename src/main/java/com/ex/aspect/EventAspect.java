@@ -32,10 +32,10 @@ public class EventAspect {
 
 
 		Object[] args = pjp.getArgs();
-		System.out.println(args);
+//		System.out.println(args[0]);
 
 
-		long start = System.currentTimeMillis();
+		long start = System.nanoTime();
 
 		pjp.proceed(); //method runs
 
@@ -43,10 +43,12 @@ public class EventAspect {
 
 
 
+		for (int i = 0; i < args.length; i++) {
+			System.out.println("type: "+ args[i].getClass().getName());
+		}
 
-		System.out.println("type: "+ args);
-		long finish = System.currentTimeMillis();
-		long executionTime = finish - start;
+		long finish = System.nanoTime();
+		long executionTime = (finish - start)/1000000;
 		System.out.println("Method Execution Time: " + executionTime + " seconds");
 
 	}

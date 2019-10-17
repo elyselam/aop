@@ -13,13 +13,13 @@ public class MainClass {
 		EventService eventService = (EventService) applicationContext.getBean("awesomeBean");
 
 		//print name of method
-		eventService.shortMethod();
+		eventService.shortMethod("Elyse is sick");
 		System.out.println();
 
-		eventService.mediumMethod();
+		eventService.mediumMethod("She needs a doctor");
 		System.out.println();
 
-		eventService.longMethod();
+		eventService.longMethod("haha she dead");
 
 
 		
