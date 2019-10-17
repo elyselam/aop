@@ -39,7 +39,7 @@ public class EventAspect {
 
 		pjp.proceed(); //method runs
 
-		System.out.println(pjp.getSignature().getName());
+//		System.out.println(pjp.getSignature().getName());
 
 
 
